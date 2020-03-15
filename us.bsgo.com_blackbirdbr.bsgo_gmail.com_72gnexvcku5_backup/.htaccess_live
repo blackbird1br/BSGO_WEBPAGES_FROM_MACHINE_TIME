@@ -1,0 +1,88 @@
+# invoke rewrite engine
+RewriteEngine On
+RewriteBase /
+
+Options -Indexes
+<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
+
+# Prevent scraping from archive for free demo
+RewriteCond %{HTTP_USER_AGENT} (ia_archiver) [NC]
+RewriteRule . - [F,L]
+
+# redirect all extension to html
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.shtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.phtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.htm$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.php$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.aspx$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.asp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jsp$ $1.html [L,NC,R=301]
+
+# Add a trailing slash (/) to a URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]*$
+RewriteRule .*[^/]$ %{REQUEST_URI}/ [L,R=301]
+
+# Create pretty URLs
+RewriteRule ^([^/]+)/$ $1.html
+RewriteRule ^([^/]+)/([^/]+)/$ $1/$2.html
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3.html
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4.html
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5.html
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6.html
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6/$7.html
+
+RewriteRule ^index.html$ / [L,R=301]
+RewriteRule ^language\/en[\/]?$ en_subdomain/language/en/? [L,R=301]
+RewriteRule ^language\/us[\/]?$ en_subdomain/language/us/? [L,R=301]
+RewriteRule ^language\/de[\/]?$ en_subdomain/language/de/? [L,R=301]
+RewriteRule ^language\/it[\/]?$ en_subdomain/language/it/? [L,R=301]
+RewriteRule ^language\/es[\/]?$ en_subdomain/language/es/? [L,R=301]
+RewriteRule ^language\/tr[\/]?$ en_subdomain/language/tr/? [L,R=301]
+RewriteRule ^language\/pl[\/]?$ en_subdomain/language/pl/? [L,R=301]
+RewriteRule ^language\/ru[\/]?$ en_subdomain/language/ru/? [L,R=301]
+RewriteRule ^language\/br[\/]?$ en_subdomain/language/br/? [L,R=301]
+RewriteRule ^language\/nl[\/]?$ en_subdomain/language/nl/? [L,R=301]
+RewriteRule ^language\/el[\/]?$ en_subdomain/language/el/? [L,R=301]
+RewriteRule ^language\/bg[\/]?$ en_subdomain/language/bg/? [L,R=301]
+RewriteRule ^language\/hu[\/]?$ en_subdomain/language/hu/? [L,R=301]
+RewriteRule ^language\/cs[\/]?$ en_subdomain/language/cs/? [L,R=301]
+RewriteRule ^language\/sv[\/]?$ en_subdomain/language/sv/? [L,R=301]
+RewriteRule ^language\/fr[\/]?$ en_subdomain/language/fr/? [L,R=301]
+RewriteRule ^language\/pt[\/]?$ en_subdomain/language/pt/? [L,R=301]
+RewriteRule ^language\/sk[\/]?$ en_subdomain/language/sk/? [L,R=301]
+RewriteRule ^language\/ro[\/]?$ en_subdomain/language/ro/? [L,R=301]
+RewriteRule ^signup[\/]?$ en_subdomain/signup/? [L,R=301]
+RewriteRule ^forum[\/]?$ en_subdomain/forum/? [L,R=301]
+RewriteRule ^support[\/]?$ en_subdomain/support/? [L,R=301]
+RewriteRule ^language\/en[\/]?$ de_subdomain/language/en/? [L,R=301]
+RewriteRule ^language\/us[\/]?$ de_subdomain/language/us/? [L,R=301]
+RewriteRule ^language\/de[\/]?$ de_subdomain/language/de/? [L,R=301]
+RewriteRule ^language\/it[\/]?$ de_subdomain/language/it/? [L,R=301]
+RewriteRule ^language\/es[\/]?$ de_subdomain/language/es/? [L,R=301]
+RewriteRule ^language\/tr[\/]?$ de_subdomain/language/tr/? [L,R=301]
+RewriteRule ^language\/pl[\/]?$ de_subdomain/language/pl/? [L,R=301]
+RewriteRule ^language\/ru[\/]?$ de_subdomain/language/ru/? [L,R=301]
+RewriteRule ^language\/br[\/]?$ de_subdomain/language/br/? [L,R=301]
+RewriteRule ^language\/nl[\/]?$ de_subdomain/language/nl/? [L,R=301]
+RewriteRule ^language\/el[\/]?$ de_subdomain/language/el/? [L,R=301]
+RewriteRule ^language\/bg[\/]?$ de_subdomain/language/bg/? [L,R=301]
+RewriteRule ^language\/hu[\/]?$ de_subdomain/language/hu/? [L,R=301]
+RewriteRule ^language\/cs[\/]?$ de_subdomain/language/cs/? [L,R=301]
+RewriteRule ^language\/sv[\/]?$ de_subdomain/language/sv/? [L,R=301]
+RewriteRule ^language\/fr[\/]?$ de_subdomain/language/fr/? [L,R=301]
+RewriteRule ^language\/pt[\/]?$ de_subdomain/language/pt/? [L,R=301]
+RewriteRule ^language\/sk[\/]?$ de_subdomain/language/sk/? [L,R=301]
+RewriteRule ^language\/ro[\/]?$ de_subdomain/language/ro/? [L,R=301]
+RewriteRule ^signup[\/]?$ de_subdomain/signup/? [L,R=301]
+RewriteRule ^forum[\/]?$ de_subdomain/forum/? [L,R=301]
+RewriteRule ^support[\/]?$ de_subdomain/support/? [L,R=301]
