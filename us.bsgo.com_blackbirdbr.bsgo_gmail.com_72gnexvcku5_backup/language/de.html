@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="Battlestar Galactica online, das kostenlose Space-Shooting-Game als MMORPG in Deinem Browser. Kämpfe im Weltall als Mensch oder Zylon um die Vorherrschaft. Auf wessen Seite stehst Du?"/>
+    <meta name="keywords" content="bgo, battlestar galactica, space shooter, MMORPG, Raumschiff Game, sci fi mmo, free to play, kostenlos, browser game, mmo, space battles, Weltraumschlacht, bsgo"/>
+    <meta http-equiv="Content-Language" content="de"/>
+    <meta name="language" content="de"/>
+    <meta name="author" content="Bigpoint GmbH"/>
+    <meta name="publisher" content="Bigpoint GmbH"/>
+    <meta name="company" content="Bigpoint GmbH"/>
+    <meta name="google-site-verification" content="Uq2I0m6uu_tCEBAQyxbRYcMSjmWFm9rXw-SBCiwaRjU"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/de_subdomain/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/de_subdomain/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/de_subdomain/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/de_subdomain/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/de_subdomain/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/de_subdomain/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/de_subdomain/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/de_subdomain/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/de_subdomain/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/de_subdomain/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/de_subdomain/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/de_subdomain/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/de_subdomain/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/de_subdomain/manifest.js">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="alternate" href="https://www.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="de" href="https://de.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="en_GB" href="https://en.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="en_US" href="https://us.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="it" href="https://it.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="es" href="https://es.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="tr" href="https://tr.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="pl" href="https://pl.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="ru" href="https://ru.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="pt-BR" href="https://br.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="nl" href="https://nl.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="el" href="https://el.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="bg" href="https://bg.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="hu" href="https://hu.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="cs" href="https://cs.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="sv" href="https://sv.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="fr" href="https://fr.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="pt" href="https://pt.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="sk" href="https://sk.battlestar-galactica.bigpoint.com/"/>
+    <link rel="alternate" hreflang="ro" href="https://ro.battlestar-galactica.bigpoint.com/"/>
+        <link rel="canonical" href="https://www.bsgo.com/"/>
+    <link rel="alternate" hreflang="de" href="https://de.bsgo.com/"/>
+    <link rel="alternate" hreflang="en_GB" href="https://en.bsgo.com/"/>
+    <link rel="alternate" hreflang="en_US" href="https://us.bsgo.com/"/>
+    <link rel="alternate" hreflang="it" href="https://it.bsgo.com/"/>
+    <link rel="alternate" hreflang="es" href="https://es.bsgo.com/"/>
+    <link rel="alternate" hreflang="tr" href="https://tr.bsgo.com/"/>
+    <link rel="alternate" hreflang="pl" href="https://pl.bsgo.com/"/>
+    <link rel="alternate" hreflang="ru" href="https://ru.bsgo.com/"/>
+    <link rel="alternate" hreflang="pt-BR" href="https://br.bsgo.com/"/>
+    <link rel="alternate" hreflang="nl" href="https://nl.bsgo.com/"/>
+    <link rel="alternate" hreflang="el" href="https://el.bsgo.com/"/>
+    <link rel="alternate" hreflang="bg" href="https://bg.bsgo.com/"/>
+    <link rel="alternate" hreflang="hu" href="https://hu.bsgo.com/"/>
+    <link rel="alternate" hreflang="cs" href="https://cs.bsgo.com/"/>
+    <link rel="alternate" hreflang="sv" href="https://sv.bsgo.com/"/>
+    <link rel="alternate" hreflang="fr" href="https://fr.bsgo.com/"/>
+    <link rel="alternate" hreflang="pt" href="https://pt.bsgo.com/"/>
+    <link rel="alternate" hreflang="sk" href="https://sk.bsgo.com/"/>
+    <link rel="alternate" hreflang="ro" href="https://ro.bsgo.com/"/>
+    <!-- EventStream ServerAdapter getJavascriptPageTag --><script language="javascript">window.BpEventStream=window.BpEventStream||{"time":new Date().getTime(),"context":{"pid":311,"tid":"1ac1f3e0e0090f9c85feef37d8764050","iid":"1522944195128c5ab10ad4544cf39508","sid":"55616b5fb3720d1b48f4a3228e5e1caa","ctime":1506317256102}};</script><script language="javascript" src="../../eventstream/eventstream.js"></script>
+        <script src="../../ajax/libs/jquery/2-1-4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../style/default.min.css">
+    <script type="text/javascript" src="../../javascript/webpage.min.js"></script>
+        <link href="../../bgc/css/bgc-1.0.0.min.css" rel="stylesheet" type="text/css" media="screen"/>
+<script type="text/javascript" src="../../ajax/libs/jquery/1-8-3/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../../bgc/js/bgc-1.0.0.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../../recaptcha/api/js/recaptcha_ajax.js" charset="UTF-8"></script>
+    <title>Battlestar Galactica Online</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <![endif]-->
+    <!-- affiliateHeadTag -->
+</head>
+<body>
+    <!-- affiliateStartTag -->
+        <section class="dynamic">
+        <a name="home"></a>
+        <section class="account clear">
+            <div>
+                <div class="left"></div>
+                <div class="center left">
+                    <ul>
+                        <li class="left languages dropdown" data-analyticslabel="web-language-layer-topnavi">
+                            <div class="selected clear">
+    <div class="label uppercase left">Sprache</div>
+    <div class="arrow right"></div>
+    <div class="icon right"><span class="de"></span></div>
+</div>
+<div class="overlay">
+    <div class="options">
+        <ul>
+                <li>
+                <a href="../../de_subdomain/language/en/" class="clear" data-analyticslabel="web-language-en">
+                    <div class="label  left">English (UK)</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="en"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/us/" class="clear" data-analyticslabel="web-language-us">
+                    <div class="label  left">English (US)</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="us"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/de/" class="clear" data-analyticslabel="web-language-de">
+                    <div class="label  left">Deutsch</div>
+                    <div class="radio right"><span class="selected"></span></div>
+                    <div class="icon right"><span class="de"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/it/" class="clear" data-analyticslabel="web-language-it">
+                    <div class="label  left">Italiano</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="it"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/es/" class="clear" data-analyticslabel="web-language-es">
+                    <div class="label  left">Español</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="es"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/tr/" class="clear" data-analyticslabel="web-language-tr">
+                    <div class="label  left">Türkçe</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="tr"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/pl/" class="clear" data-analyticslabel="web-language-pl">
+                    <div class="label  left">Polski</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="pl"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/ru/" class="clear" data-analyticslabel="web-language-ru">
+                    <div class="label  left">Русский</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="ru"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="http://www.waybackmachinedownloader.com/blog/alternative-sites-like-archive-org/" class="clear" data-analyticslabel="web-language-br">
+                    <div class="label  left">Português (BR)</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="br"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/nl/" class="clear" data-analyticslabel="web-language-nl">
+                    <div class="label  left">Nederlands</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="nl"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/el/" class="clear" data-analyticslabel="web-language-el">
+                    <div class="label  left">Ελληνικά</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="el"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/bg/" class="clear" data-analyticslabel="web-language-bg">
+                    <div class="label  left">България</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="bg"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/hu/" class="clear" data-analyticslabel="web-language-hu">
+                    <div class="label  left">Magyar</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="hu"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/cs/" class="clear" data-analyticslabel="web-language-cs">
+                    <div class="label  left">Čeština</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="cs"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/sv/" class="clear" data-analyticslabel="web-language-sv">
+                    <div class="label  left">Svenska</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="sv"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/fr/" class="clear" data-analyticslabel="web-language-fr">
+                    <div class="label  left">Français</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="fr"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/pt/" class="clear" data-analyticslabel="web-language-pt">
+                    <div class="label  left">Português</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="pt"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/sk/" class="clear" data-analyticslabel="web-language-sk">
+                    <div class="label  left">Slovensky</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="sk"></span></div>
+                </a>
+            </li>
+                <li>
+                <a href="../../de_subdomain/language/ro/" class="clear" data-analyticslabel="web-language-ro">
+                    <div class="label  left">Română</div>
+                    <div class="radio right"><span></span></div>
+                    <div class="icon right"><span class="ro"></span></div>
+                </a>
+            </li>
+            </ul>
+    </div>
+    <div class="footer clear">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</div>                        </li>
+                        <li class="left spacer"></li>
+                            <li class="left login uppercase" data-analyticslabel="web-login-btn-topnavi">
+        <div class="bgcdw_login_container bgc">
+    <div class="bgcdw_login_container_form">
+        <form name="bgcdw_login_form" method="post" class="bgcdw_login_form" action="https://sas.bpsecure.com/Sas/Authentication/Bigpoint?authUser=311&amp;token=JvBOftgmYL3UOXxF8yoVnhplusJ-t1fXa8ckK8H9VocL1Cy983-JUP8rccBmA-r-6gtErWZHRN7EhZNgDWlI-rOZvtuKjvaEnMVIS0DNKruD1932A7GA1Vqd4s_wpgkt56Hb27RG9ybEbaUTrz0QtC5cEHcwNDCG7395WOwba6l7tlpAlR39ILP6ypDXFBGhQ0u8WGGy5Srn7csu573ztQUDTG286du5G8ClS1zAvqUt_-Ktb5eE24BlQJ58lC-ekVsE8p66PPT4hMQ2KYfX1CB5OvraGbjxzBJBVhz4JQYbKEeOiag1wK_B1hmf7CPvqE1cv4UoAVv5LAKM0rkn8IsxmU1O">
+            <div class="bgc_error_translations" style="display:none">
+                <div data-error-key="bgc.error.username_isTooShort">Dein gew&uuml;nschter Username ist zu kurz. Bitte gib einen neuen Usernamen ein, der zwischen 4 und 20 Zeichen enth&auml;lt.</div>
+                <div data-error-key="bgc.error.username_isTooLong">Dein gew&uuml;nschter Username ist zu lang. Bitte gib einen neuen Usernamen ein, der zwischen 4 und 20 Zeichen enth&auml;lt.</div>
+                <div data-error-key="bgc.error.username_notGiven">Bitte gib deinen Usernamen ein.</div>
+                <div data-error-key="bgc.error.password_isTooShort">Dein eingegebenes Passwort ist zu kurz. Bitte gib ein neues Passwort ein, das zwischen 4 und 45 Zeichen enth&auml;lt.</div>
+                <div data-error-key="bgc.error.password_isTooLong">Dein eingegebenes Passwort ist zu lang. Bitte gib ein neues Passwort ein, das zwischen 4 und 45 Zeichen enth&auml;lt.</div>
+                <div data-error-key="bgc.error.password_notGiven">Bitte gib dein Passwort ein.</div>
+                <div data-error-key="bgc.error.email_invalidAddress">Deine E-Mail-Adresse scheint nicht korrekt zu sein. Bitte gib eine g&uuml;ltige E-Mail-Adresse ein.</div>
+                <div data-error-key="bgc.error.email_notGiven">Bitte gib Deine E-Mail-Adresse ein.</div>
+                <div data-error-key="bgc.error.checkbox_tick">Bitte setzen Sie das H&auml;kchen in die Checkbox.</div>
+            </div>
+            <fieldset class="bgcdw_login_form_login"><div class="bgcdw_input_text bgcdw_login_form_username">
+                    <label for="bgcdw_login_form_username">Username</label>
+                    <input id="bgcdw_login_form_username" name="username" type="text" maxlength="20"></div>
+                <div class="bgcdw_input_password bgcdw_login_form_password">
+                    <label for="bgcdw_login_form_password">Passwort</label>
+                    <input id="bgcdw_login_form_password" name="password" type="password" maxlength="45"></div>
+            </fieldset><div class="bgcdw_login_container_remindpassword">
+                <a class="bgcdw_remindpassword" target="_self" href="https://accountcenter.bpsecure.com/PasswordReminder?pid=311&amp;lang=de">Passwort vergessen?</a>
+            </div>
+            <fieldset class="bgcdw_login_form_buttons"><input class="bgcdw_button bgcdw_login_form_login" type="submit" value="Login"><input class="bgcdw_button bgcdw_login_form_register" type="button" onclick="return false;" value="Registrieren"></fieldset></form>
+    </div>
+</div>
+    </li>
+    <li class="left facebook uppercase" data-analyticslabel="web-fbconnect-btn-topnavi">
+        <div class="bgc_fbConnect_container_link bgc">
+    <a class="bgc_fbConnect" href="https://www.facebook.com/dialog/oauth?client_id=135588576452327&amp;redirect_uri=https%3A%2F%2Fbsgo.com%2FProjectApi%2FFacebookConnect%3FauthUser%3D311%26token%3DFOcUWM4bXQrsWr-mRndrt9U0vL6JF8PE1ehFBPuyI9a1yU7vChlbd9iziazJv2k8AThNG0AHnMKNUXNUwkoqSmgmwD_neCqf7paJ-aS7kFB-wkp1vPKh6nLtPOZspRg3m-Pn0BZWuWSIJUH_jQS2fpL5zAeHbZXVyvzNzGu03YKEjMOGngI-OU3KEgNzVnfkTOWqGl2RQQ_Oe4NkVrKH3cftH4Q0S42JmOf1wePqwIF9K4HW7Hr6TsuueNsrSgeZaoefI50Tw1TUwt6k65CGRb3BG_KOUaibBn7qut7dP2e4uOmOo8IyT-HFtqhdelwUJmmy_vNkpbJmUgkgz16097M3hGNJuDsG7bgPzc2C-dX9hm3xt8zAFd-HXPZv7Z7gZslt1JQ9uC4CLEBZN9AXRw836-EvlBFOKGjK4yKLsFehd06kO5_hNPkiU0R9Kuyed6IReAbLX_C0KuCDPFgCCRbIzy8crSnbF98HwfgRXNgvlvhVH4ezzdoTAt4A85v_J-V_JoFXRESxIujj7H3YEHjPfdCyBiCy20GI4w&amp;scope=email%2Cuser_birthday">
+        <div class="bgc_fbConnect_button bgc_facebookIcon"></div>
+    </a>
+</div>
+    </li>
+    <li class="left register uppercase">
+        <div>            <form action="../../de_subdomain/signup/">
+                <input data-analyticslabel="web-signup-btn-topnavi" type="submit" value="Registrieren"/>
+            </form>
+        </div>
+        <!--
+        <a href="https://de.bsgo.com/signup" data-analyticslabel="web-signup-btn-topnavi">
+            <span>Registrieren</span>
+        </a>
+        -->
+    </li>
+                    </ul>
+                </div>
+                <div class="right"></div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="logo">
+                <div class="content">
+                                    </div>
+                <div class="btn">
+                        <a href="../../de_subdomain/signup/" data-analyticslabel="web-signup-btn-cta">
+        Registrieren    </a>
+                </div>
+                <div class="btnLeft">
+                                                        </div>
+                <div class="btnRight">
+                                                        </div>
+            </div>
+        </section>
+        <nav id="mainnav">
+            <div class="spacer"></div>
+            <ul>
+                <li>
+                    <a class="uppercase" href="#home" data-analyticslabel="web-signup-btn-navi">
+                        Startseite                    </a>
+                </li>
+                <li>
+                    <a class="uppercase" href="#colonials" data-analyticslabel="web-colonials-btn-navi">
+                        Menschen                    </a>
+                </li>
+                <li>
+                    <a class="uppercase" href="#cylons" data-analyticslabel="web-cylons-btn-navi">
+                        Zylonen                    </a>
+                </li>
+                <li>
+                    <a class="uppercase" href="#story" data-analyticslabel="web-story-btn-navi">
+                        Story                    </a>
+                </li>
+                <li>
+                    <a class="uppercase" href="#media" data-analyticslabel="web-media-btn-navi">
+                        Medien                    </a>
+                </li>
+                <li><a class="uppercase" href="../../de_subdomain/forum/" target="_blank" data-analyticslabel="web-board-btn-navi">
+                        Forum                    </a>
+                </li>
+                            </ul>
+            <div class="social">
+                <a href="https://www.facebook.com/battlestargalactica" target="_blank" class="facebook" data-analyticslabel="web-social-btn-facebook"></a>
+                <a href="https://www.youtube.com/user/battlestargalactica" target="_blank" class="youtube" data-analyticslabel="web-social-btn-youtube"></a>
+                <a href="https://twitter.com/humanorcylon" target="_blank" class="twitter" data-analyticslabel="web-social-btn-twitter"></a>
+				<a href="https://www.pinterest.com/bsgo2016/" target="_blank" class="pinterest" data-analyticslabel="web-social-btn-pinterest"></a>
+            </div>
+        </nav>
+    </section>
+    <!--<div class="divider"><div></div></div>-->
+    <section class="static">
+        <div><hr/></div>
+        <article class="teaser" data-analyticslabel="web-teaser-layer-container">
+            <div> 
+                <div class="left"></div>
+                <div class="center">
+                    <h2>Mensch oder Zylon?</h2>
+                    <br/>
+                    <p>Die Zylonen wurden unterdrückt.<br/>Die Menschheit steht kurz vor dem Untergang.<br/>Die Zeit ist reif für Rache!<br/>Welcher Seite wirst Du Dich anschließen?</p>
+                </div>
+                <div class="right"></div>
+            </div>
+        </article>
+        <a name="colonials"></a>
+        <div><hr/></div>
+        <article class="colonial ships" data-analyticslabel="web-colonial-layer-container">
+            <header>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <div>
+                    <span class="icon"></span>
+                    <h1>Fraktionen&nbsp;&nbsp;</h1>
+                    <h2>Mensch</h2>
+                </div>
+                <hr/>
+            </header>
+            <div>
+                <div class="selection">
+                    <p>Die Kolonisten wurden Zeugen, wie die Menschheit durch die Zylonen praktisch ausgelöscht wurde, und sind in einer bunten Sammlung aus Raumschiffen angeführt von der Battlestar Galactica um ihr Leben geflohen. Diese letzten überlebenden Menschen sind in einer unerforschten Region gestrandet und versuchen verzweifelt, zur Erde zu gelangen, bevor die Zylonen ihr Vernichtungswerk vollenden.</p>
+                    <ul data-analyticslabel="web-colonial-icon-screenshot">
+                        <li class="viper_mk2" data-name="Viper Mk II" data-tier="Angriffsklasse"></li>
+                        <li class="viper_mk3" data-name="Viper Mk III" data-tier="Angriffsklasse"></li>
+                        <li class="viper_mk7" data-name="Viper Mk VII" data-tier="Angriffsklasse"></li>
+                        <li class="raptor" data-name="Raptor" data-tier="Angriffsklasse"></li>
+                        <li class="raptor_mk2  nl" data-name="Raptor FR" data-tier="Angriffsklasse"></li>
+                        <li class="rhino" data-name="Rhino" data-tier="Angriffsklasse"></li>
+                        <li class="raven" data-name="Raven" data-tier="Angriffsklasse"></li>
+                        <li class="glaive" data-name="Glaive" data-tier="Eskortenklasse"></li>
+                        <li class="scythe" data-name="Scythe" data-tier="Eskortenklasse"></li>
+                        <li class="halberd  nl" data-name="Halberd" data-tier="Eskortenklasse"></li>
+                        <li class="maul" data-name="Maul" data-tier="Eskortenklasse"></li>
+                        <li class="vanir" data-name="Vanir" data-tier="Linienklasse"></li>
+                        <li class="jotunn" data-name="Jotunn" data-tier="Linienklasse"></li>
+                        <li class="gungnir" data-name="Gungnir" data-tier="Linienklasse"></li>
+                        <li class="aesir  nl" data-name="Aesir" data-tier="Linienklasse"></li>
+                        <li class="brimir" data-name="Brimir" data-tier="Flaggschiffe"></li>
+                        <li class="pegasus" data-name="Pegasus" data-tier="Flaggschiffe"></li>
+                    </ul>
+                </div>
+                <div class="preview" data-analyticslabel="web-colonial-icon-screenshot">
+                    <div class="info">
+                        <span class="name uppercase"></span>
+                        <span class="tier"></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <a name="cylons"></a>
+        <div><hr/></div>
+        <article class="cylon ships" data-analyticslabel="web-colonial-element-container">
+            <header>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <div>
+                    <span class="icon"></span>
+                    <h1>Fraktionen&nbsp;&nbsp;</h1>
+                    <h2>Zylon</h2>
+                </div>
+                <hr/>
+            </header>
+            <div>
+                <div class="selection">
+                    <p>Die Zylonen führten einen massiven Angriff auf die zwölf Kolonien aus, um die größte Bedrohung auszulöschen und ihre zukünftige Freiheit sicherzustellen. Nun durchsuchen die Zylonen den Weltraum nach überlebenden Kolonisten, um das Universum von den Menschen zu befreien, die sie als niederträchtige und unreine Rasse betrachten.</p>
+                    <ul data-analyticslabel="web-cylon-icon-screenshot">
+                        <li class="raider" data-name="J\u00e4ger" data-tier="Angriffsklasse"></li>
+                        <li class="heavy_raider" data-name="Schwerer J\u00e4ger" data-tier="Angriffsklasse"></li>
+                        <li class="heavy_raider_fr" data-name="Schwerer J\u00e4ger (FE)" data-tier="Angriffsklasse"></li>
+                        <li class="war_raider" data-name="Kriegsj\u00e4ger" data-tier="Angriffsklasse"></li>
+                        <li class="war_raider_mk2 nl" data-name="Kriegsj\u00e4ger MK II" data-tier="Angriffsklasse"></li>
+                        <li class="marauder" data-name="Marauder" data-tier="Angriffsklasse"></li>
+                        <li class="malefactor" data-name="Malefactor" data-tier="Angriffsklasse"></li>
+                        <li class="liche" data-name="Liche" data-tier="Eskortenklasse"></li>
+                        <li class="banshee" data-name="Banshee" data-tier="Eskortenklasse"></li>
+                        <li class="wraith nl" data-name="Wraith" data-tier="Eskortenklasse"></li>
+                        <li class="spectre" data-name="Spectre" data-tier="Eskortenklasse"></li>
+                        <li class="nidhogg" data-name="Nidhogg" data-tier="Linienklasse"></li>
+                        <li class="fenrir" data-name="Fenrir" data-tier="Linienklasse"></li>
+                        <li class="jormung" data-name="Jormung" data-tier="Linienklasse"></li>
+                        <li class="hel nl" data-name="Hel" data-tier="Linienklasse"></li>
+                        <li class="surtur" data-name="Surtur" data-tier="Flaggschiffe"></li>
+                        <li class="basestar" data-name="Basisstern" data-tier="Flaggschiffe"></li>
+                    </ul>
+                </div>
+                <div class="preview" data-analyticslabel="web-cylon-element-screenshot">
+                    <div class="info">
+                        <span class="name uppercase"></span>
+                        <span class="tier"></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <a name="story"></a>
+        <div><hr/></div>
+        <article class="story" data-analyticslabel="web-story-element-container">
+            <header>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <div>
+                    <span class="icon"></span>
+                    <h1>Story</h1>
+                </div>
+                <hr/>
+            </header>
+            <div>
+                <div>
+                    <p>Vierzig Jahre nach dem Ende des ersten Zylonenkriegs kehrten die Zylonen zurück und vernichteten die Zwölf Kolonien. Der in die Jahre gekommene Battlestar Galactica konnte entkommen und begab sich auf die Suche nach einer neuen Heimat für die Überlebenden:  dem Planeten Erde.<br/>Verfolgt von den Zylonen trafen die Galactica und der verbliebene Teil der kolonialen Flotte auf Battlestar Pegasus, einem weiteren Überlebenden des Zylonenangriffs. Mit vereinten Kräften gelang es daraufhin den Kolonisten das Auferstehungsschiff, der sie verfolgenden Zylonen, zu zerstören.<br/>Als Vergeltung starteten die Zylonen einen massiven Gegenangriff, dem die koloniale Flotte durch einen FTL-Sprung zu entkommen versuchte. Überrumpelt und unvorbereitet unterlief den Kolonisten allerdings ein schwerwiegender Fehler bei der Ausführung des Sprungs, woraufhin alle FTL-Antriebe überluden und beide Flotten tief in einen unerforschten Teil des Universums katapultierten.<br/>In Battlestar Galactica Online sind sowohl die Flotte der Menschen als auch die der Zylonen in einer unbekannten Region des Alls gestrandet. Schwer angeschlagen und knapp an Ressourcen versuchen nun beide Fraktionen, ihre Flotten zu reparieren und neu zu bewaffnen. Damit beginnt ein unerbittlicher Kampf um die umliegenden Systeme, die reich an Tylium, Metallen und Wasser sind. Wer wird ihn gewinnen? Erstarken die Zylonen erneut mit ihrem Plan, die Menschheit auszulöschen? Oder kann die koloniale Flotte entkommen und ihre Reise zur Erde fortsetzen?</p>
+                </div>
+                <div class="banner">
+                </div>
+            </div>
+        </article>
+        <a name="media"></a>
+        <div><hr/></div>
+        <article class="media" data-analyticslabel="web-media-layer-container">
+            <header>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <div>
+                    <span class="icon"></span>
+                    <h1>Medien</h1>
+                </div>
+                <hr/>
+            </header>
+            <div>
+                <div class="type">
+                    <span class="screenshots" href="" data-analyticslabel="web-media-btn-screenshot">Screenshots</span>
+                    <span class="videos" href="" data-analyticslabel="web-media-btn-trailer">Videos</span>
+                </div>
+                <div class="showcase"> 
+                    <div class="prev" data-analyticslabel="web-media-btn-navi"><span></span></div>
+                    <div class="next" data-analyticslabel="web-media-btn-navi"><span></span></div>
+                </div>
+            </div>
+        </article>
+        <div><hr/></div>
+        <article class="awards" data-analyticslabel="web-awards-layer-container">
+            <a name="awards"></a>
+            <div>
+                <a href="https://bigpoint.net/de/awards/" target="_blank"><span class="eu_game_awards"></span></a>
+                <a href="https://bigpoint.net/de/awards/" target="_blank"><span class="unity_awards"></span></a>
+                <a href="https://bigpoint.net/de/awards/" target="_blank"><span class="action_browser_goty"></span></a>
+                <a href="https://bigpoint.net/de/awards/" target="_blank"><span class="tech_browser_goty"></span></a>
+                <a href="https://bigpoint.net/de/awards/" target="_blank"><span class="mmorpg_center_player_choise"></span></a>
+            </div>
+        </article>
+        <div><hr class="footer"/></div>
+    </section>
+    <footer data-analyticslabel="web-footer-layer-container">
+        <div>
+    <ul>
+        <li class="logos">
+            <a href="http://www.nbcuni.com/" target="_blank"><span class="nbc"></span></a>
+            <a href="http://www.syfy.com/" target="_blank"><span class="syfy"></span></a>
+            <a href="http://www.nbcuni.com/" target="_blank"><span class="ucp"></span></a>
+        </li>
+        <li class="license">
+            <p>Battlestar Galactica &copy; Universal Network Television LLC. Licensed by NBC Universal Television Consumer Products Group 2017. All Rights Reserved.</p>
+        </li>
+        <li class="spacer">
+            <hr/>
+        </li>
+        <li class="legal">
+                            <a href="" target="">&copy; Bigpoint</a>
+                            <a href="" target="">Alle Rechte vorbehalten</a>
+                            <a href="https://legal.bigpoint.com/US/terms-and-conditions/de" target="_blank">AGB</a>
+                            <a href="https://legal.bigpoint.com/US/privacy-policy/de" target="_blank">Datenschutzerklärung</a>
+                            <a href="https://legal.bigpoint.com/US/imprint/de" target="_blank">Impressum</a>
+                            <a href="../../de_subdomain/support/" target="_blank">Support</a>
+                            <a href="../../de_subdomain/forum/" target="_blank">Forum</a>
+                    </li>
+                <li class="logos bigpoint">
+            <a href="http://de.bigpoint.com/" target="_blank">
+                <span class="bigpoint"></span>
+            </a>
+        </li>
+            </ul>
+</div>    </footer>
+    <form id="bgc_sasform_config">
+        <input type="hidden" name="placeholder" value="login"/>
+        <!--<input type="hidden" name="hidelabels" value="login"/>-->
+        <input type="hidden" name="errors-login" value="inline"/>
+        <input type="hidden" name="errors-signup" value="inline"/>
+        <input type="hidden" name="errors-login" value="inline"/>
+        <input type="hidden" name="errors-facebook" value="inline"/>
+    </form>
+    <script type="text/javascript">
+        <!--
+        $(document).ready(function() {
+            bootstrapCTA();
+            bootstrapMedia({
+                screenshots:[
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_1.jpg?_cs=2f4f3de81afc3afccb6eca6bb4bab6f5',
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_2.jpg?_cs=c819028b1c0d20db047fd9537c108af9',
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_3.jpg?_cs=c297b1263f5242220a5ed8db7695e106',
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_4.jpg?_cs=e34b879b20d969cf37ed762a9c8d0f7b',
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_5.jpg?_cs=41956697ce868128b2138bc9ae730c3d',
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_6.jpg?_cs=c08bf45e2127dcc9d1dfd5bb87638d66',
+                    'https://battlestargalactica-311.bpsecure.com/images/media/screenshot_7.jpg?_cs=77636042af3aeaffe69d8b6b125d6f13'
+                ],
+                videos:['yyAV4tmpLsA', 'UxMYDUgcBFE', 'baCeVKGtzi8', 'I237qKI-Kgc', '0JIq9VhIct0']}
+            );
+        });
+        -->
+    </script>
+    <!-- affiliateEndTag -->
+<!-- BPID --><script language="javascript">window.bpid=window.bpid||{};window.bpid.callbacks=window.bpid.callbacks||[];window.bpid.callbacks.push(function(bpid) {document.cookie="__bpid="+bpid+";path=/;expires=Fri, 03 Jun 2022 13:59:24 GMT;";if (bpid != null) {try {var xhr = new XMLHttpRequest();xhr.open("GET", "\/GameAPI.php?action=core.bpid&bpid="+bpid, true);xhr.send(null);} catch(e) {}}});</script><script language="javascript" src="../../bpid/bpid.js" defer="defer"></script><!-- /BPID --><script type="text/javascript" language="javascript">
+            var SemTmLocale   = 'US';
+            var SemTmAid      = '0';
+            var SemTmAip      = '';
+            var SemTmPpid     = '311';
+            var SemTmCtype    = '0';
+            var SemTmMid      = '';
+            var SemTmCountry  = 'US';
+            var SemTmPid      = '311';
+            var SemTmUid      = '';
+            var SemTmAit      = '';
+            var gtmLang       = 'de';
+            var gtmRealPayUser = 0;
+            var gtmSSO        = 0;
+            var gtmExternalProvider = '';
+            var gtmCNAME      = 0;
+var lplocaleMEB   = 'US';
+                var SemTmAreaID   = 'external.server_select';
+                var gtmLoginCount = '';
+                var gtmLayerIds   = [];
+                var gtmRn         = 0;
+                var gtmEv         = 0;
+</script>
+        <!-- Google Tag Manager -->
+        <script>
+        var cb   = new Date().getTime();
+        var file = 'gtm'+'.js'; // quick fix for handling file name locally.
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:file});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/' + file + '?cb='+cb+'&id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P8R8CV');
+        </script>
+        <!-- End Google Tag Manager -->
+    </body>
+</html>
