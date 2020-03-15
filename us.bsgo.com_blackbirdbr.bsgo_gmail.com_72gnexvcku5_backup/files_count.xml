@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<pagescount>
+	<html_total>67</html_total>
+	<html_done>67</html_done>
+	<img>150</img>
+	<js>12</js>
+	<css>3</css>
+	<pdf/>
+	<doc/>
+	<xls/>
+	<ppt/>
+	<swf/>
+	<mp3/>
+	<mp4/>
+	<wav/>
+	<xml/>
+	<json/>
+	<txt/>
+	<fonts>4</fonts>
+	<scraping_reload>1</scraping_reload>
+	<is_pretty_url>true</is_pretty_url>
+	<is_ebn>false</is_ebn>
+	<email>blackbirdbr.bsgo@gmail.com</email>
+	<theme_name>79269</theme_name>
+	<server_url_front_page>https://www.waybackmachinedownloader.com/scraping/files/demo/us.bsgo.com_blackbirdbr.bsgo_gmail.com_72gnexvcku5/</server_url_front_page>
+	<no_www_url>us.bsgo.com</no_www_url>
+	<hosted_domain/>
+	<original_archive_url>http://web.archive.org/web/20181230221626/https://us.bsgo.com/?bptid=38fc90aeeb495b5f973f6530dad3bf8c</original_archive_url>
+	<final_archive_url>http://web.archive.org/web/20181230221626/https://us.bsgo.com/%3Fbptid%3D38fc90aeeb495b5f973f6530dad3bf8c</final_archive_url>
+	<front_page_code_date>20181230221626</front_page_code_date>
+	<total_urls_from_api/>
+	<max_reached_live>false</max_reached_live>
+	<scrape_other_captures>false</scrape_other_captures>
+	<total_size>19088</total_size>
+</pagescount>
